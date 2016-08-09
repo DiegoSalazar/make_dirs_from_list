@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Makes a directory structure given a list of dir names}
   spec.description   = %q{Quick command to create a directory structure given a list of dir names}
   spec.homepage      = "https://github.com/DiegoSalazar/make_dirs_from_list"
+  spec.licenses      = ['MIT']
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
