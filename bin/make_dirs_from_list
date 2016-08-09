@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require "bundler/setup"
+require "make_dirs_from_list"
+
+unless ARGV.size == 3
+  puts "Usage: make_dirs_from_list path/to/list.xlsx /target/dir \"F1-F2-or_whatever\""
+  exit 1
+end
+
+MakeDirsFromList.make! ARGV[0], ARGV[1], ARGV[2]
