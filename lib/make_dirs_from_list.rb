@@ -1,7 +1,6 @@
 require "make_dirs_from_list/version"
 require "roo"
 require "fileutils"
-require "pry" # debug
 
 module MakeDirsFromList
   def self.make!(file_name, target_dir, title_template)
