@@ -1,8 +1,10 @@
 require "make_dirs_from_list/version"
-require "roo"
 require "fileutils"
+require "roo"
 
 module MakeDirsFromList
+  USAGE = "Usage: make_dirs_from_list path/to/list.xlsx /target/dir \"F1-F2-or_whatever\""
+
   def self.make!(file_name, target_dir, title_template)
     columns = get_column_indices title_template
     title_placeholders = get_placeholders title_template
@@ -21,7 +23,7 @@ module MakeDirsFromList
     
     puts "Making #{dir_names.size} dirs in #{target_dir} from text in columns #{columns}."
 
-    dir_names.each_with_index do |dir_name|
+    dir_names.each do |dir_name|
       next if File.exists? dir_name
       FileUtils.mkdir dir_name
       print "."

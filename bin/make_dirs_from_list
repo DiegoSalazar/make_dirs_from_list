@@ -3,7 +3,7 @@ require "bundler/setup"
 require "make_dirs_from_list"
 
 unless ARGV.size == 3
-  puts "Usage: make_dirs_from_list path/to/list.xlsx /target/dir \"F1-F2-or_whatever\""
+  puts MakeDirsFromList::USAGE
   exit 1
 end
 
