@@ -12,7 +12,7 @@ Open the terminal and run:
 
     $ make_dirs_from_list path/to/sheet.xlsx /target/parent/dir "F3_F4"
 
-The directory name template "F3_F4" denotes column placeholders i.e. for each row of the spreadsheet, get data in column 3 and 4 and join together with a "_".
+The directory name template "F3_F4" denotes column placeholders i.e. for each row of the spreadsheet, get data in column 3 and 4 and join together with a "_". The result will be the name of the directory for that row.
 
 ## Development
 
@@ -22,5 +22,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[DiegoSalazar]/make_dirs_from_list.
+Bug reports and pull requests are welcome on GitHub at https://github.com/DiegoSalazar/make_dirs_from_list.
 
